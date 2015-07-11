@@ -1,0 +1,2 @@
+# freeOfWhuCaptchaServer
+Server of freeOfWhuCaptcha
