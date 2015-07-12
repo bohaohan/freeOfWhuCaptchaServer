@@ -13,8 +13,8 @@ def index(request):
 
 
 def login(request):
-	if request.method == 'GET':
-		img = request.GET.get("img")
+	if request.method == 'POST':
+		img = request.POST.get("img")
 		img = img.replace("*1*","/")
 		img = img.replace("*2*",":")
 		img = img.replace("*3*",";")
