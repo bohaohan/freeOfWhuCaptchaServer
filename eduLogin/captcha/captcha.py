@@ -53,7 +53,7 @@ class Captcha(object):
             return self._human_recognization()
 
         neural = libfann.neural_net()
-        libfann.neural_net.create_from_file(neural, '/Users/bohaohan/development/eduLogin/eduLogin/captcha/data/training.data')
+        libfann.neural_net.create_from_file(neural, 'eduLogin/captcha/data/training.data')
 
         self._binaryzation()
         self._clear_noise()
