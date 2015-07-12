@@ -8,10 +8,12 @@ from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.decorators import login_required
 from eduLogin.education.education import *
 from eduLogin.captcha.captcha import Captcha
+from django.views.decorators.csrf import csrf_exempt
+
 def index(request):
 	return render_to_response("index.html")
 
-
+@csrf_exempt 
 def login(request):
 	if request.method == 'POST':
 		img = request.POST.get("img")
