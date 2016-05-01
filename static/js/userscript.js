@@ -6,10 +6,10 @@ if(window.dbg){
 }else{
     //window.baseUrl='http://testjoking.sinaapp.com/whujw/extension/';
 }
-window.baseUrl = 'http://cloudtest1233.applinzi.com/'
-window.jquerySrc='http://cloudtest1233.applinzi.com/jquery-2.0.3.min.js';
-window.bootstrapCssSrc=window.baseUrl+'bootstrap.css';
-window.templateJsSrc=window.baseUrl+'build/template.js';
+window.baseUrl = 'http://fc.ziqiang.studio/static/'
+window.jquerySrc= window.baseUrl + 'js/jquery-2.0.3.min.js';
+window.bootstrapCssSrc=window.baseUrl+'css/bootstrap.css';
+window.templateJsSrc=window.baseUrl+'js/build/template.js';
 if(window.dbg){
 	window.styleCssSrc=window.baseUrl+'style.css?v='+Math.random();
 }else{
