@@ -9,7 +9,7 @@ class CaptchaNew(object):
        'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
        'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w',
        'x', 'y', 'z']
-    model = self.get_model()
+    model = get_model()
     def __init__(self):
         pass
 
