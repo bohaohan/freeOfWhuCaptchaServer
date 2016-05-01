@@ -7,7 +7,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.decorators import login_required
 from eduLogin.education.education import *
-from eduLogin.captcha.captcha import Captcha
+from eduLogin.captcha.captcha_new import *
 from django.views.decorators.csrf import csrf_exempt
 
 def index(request):
@@ -25,7 +25,8 @@ def login(request):
 		img = img[23:]
 		imag = base64.b64decode(img)
 		image = Image.open(StringIO(imag))
-		result = Captcha(image=image).result()
+		captcha = CaptchaNew()
+		result = captcha.predict(image)
 		return HttpResponse(json.dumps({'result': result}))
 		#return HttpResponse(json.dumps(img))
 		
