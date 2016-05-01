@@ -79,12 +79,12 @@ class CaptchaNew(object):
         result = ""
 
         try:
-        	res = self.get_res(img)
-	        for i in res:
-	            result += str(self.cha[self.model.predict_classes(i.reshape(1, 1, 24, 24))])
-	        return result
-	    except:
-	    	pass
+            res = self.get_res(img)
+            for i in res:
+                result += str(self.cha[self.model.predict_classes(i.reshape(1, 1, 24, 24))])
+            return result
+        except:
+            pass
 
 if __name__ == "__main__":
     from PIL import Image
