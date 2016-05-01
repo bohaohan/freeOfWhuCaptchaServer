@@ -6,8 +6,8 @@ if(window.dbg){
 }else{
     //window.baseUrl='http://testjoking.sinaapp.com/whujw/extension/';
 }
-window.baseUrl = 'http://fc.ziqiang.studio/static/'
-window.jquerySrc='hhttp://fc.ziqiang.studio/static/js/jquery-2.0.3.min.js';
+window.baseUrl = 'http://fc.ziqiang.studio/static/';
+window.jquerySrc= baseUrl + 'js/jquery-2.0.3.min.js';
 window.bootstrapCssSrc=window.baseUrl+'css/bootstrap.css';
 window.templateJsSrc=window.baseUrl+'js/build/template.js';
 if(window.dbg){
