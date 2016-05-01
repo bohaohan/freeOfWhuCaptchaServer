@@ -1,0 +1,1050 @@
+@charset "gb2312";
+
+/* CSS Document */ /*********************************
+公用css属性
+*********************************/
+table { /*border-collapse:collapse;*/
+	
+}
+
+.table { /*width:920px;*/
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #FFF;
+	text-align: center;
+	font-size: 13px;
+}
+
+a:link,a:visited {
+	text-decoration: none;
+	color: #005197;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.menu_item_logout {
+	margin-bottom: -7px;
+	width: 22px;
+	height: 21px;
+	display: inline-block;
+	background-image: url(../images/info_icon.png);
+	background-repeat: no-repeat;
+	background-position: -23px -3px;
+}
+
+.menu_item_resetpwd {
+	margin-bottom: -6px;
+	width: 22px;
+	height: 21px;
+	display: inline-block;
+	background-image: url(../images/info_icon.png);
+	background-repeat: no-repeat;
+	background-position: 0 -3px;
+}
+
+.menu_item_help {
+	margin-bottom: -6px;
+	width: 22px;
+	height: 23px;
+	display: inline-block;
+	background-image: url(../images/boy_bg.png);
+	background-repeat: no-repeat;
+	background-position: -504px -39px;
+}
+
+/************************************************
+*******************overlay弹出框标题样式*******************
+************************************************/
+.overlay_title h2 {
+	color: #005197;
+	font-size: 18px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+/************************************************
+*******************主页面样式*******************
+************************************************/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	text-align: center;
+	font-size: 12px;
+	font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	color: #000;
+}
+
+#container {
+	position: relative;
+	margin: 5px auto;
+	width: 1280px;
+	border: 0px solid;
+}
+
+#main_contaier,#teacher_main_contaier {
+	border: 0px solid;
+	background-image: url(../images/index-xuli.png);
+	background-repeat: repeat-y;
+	height: 800px;
+}
+
+#teacher_main_contaier {
+	background-image: url(../images/teacher_index_bg.png);
+}
+
+#admin_main_contaier {
+	background-image: url(../images/index_bg.png);
+}
+
+#top {
+	height: 25px;
+	padding-right: 30px;
+	background-color: #f9f9f9;
+}
+
+#header {
+	margin-left: 20px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+#header_label {
+	text-align: right;
+	padding-top: 10px;
+	padding-right: 20px;
+	color: #FFF;
+}
+
+#content { /*height:100%;*/
+	height: 660px;
+	margin: 0 38px;
+}
+
+#footer {
+	background-image: url(../images/footer.png);
+	background-repeat: repeat-x;
+	background-position: 0 -10px;
+	height: 60px;
+	margin: 4px 0;
+	font-size: 12px;
+	color: #FFF;
+}
+
+#footer.stu_footer {
+	background-image: url(../images/stu_footer1.png);
+}
+
+#menu {
+	margin: 0px;
+}
+
+#menu li {
+	margin: 10px 10px;
+	background-repeat: no-repeat;
+	/*background-image:url(../images/menu_buttons_fc.png);*/
+	background-image: url(../images/menu_buttons_fc3.png);
+	list-style: none;
+	float: left;
+	width: 77px;
+	height: 77px;
+	cursor: pointer;
+}
+
+/*课程表*/
+#btn1 {
+	background-position: -30px -15px;
+}
+
+#btn1 :hover {
+	background-position: -30px -94px;
+}
+
+#btn1.current {
+	background-position: -30px -171px;
+}
+
+#btn2 {
+	background-position: -662px -15px;
+}
+
+#btn2 :hover {
+	background-position: -662px -94px;
+}
+
+#btn2.current {
+	background-position: -662px -171px;
+}
+
+#btn3 {
+	background-position: -753px -15px;
+}
+
+#btn3 :hover {
+	background-position: -753px -94px;
+}
+
+#btn3.current {
+	background-position: -753px -171px;
+}
+
+#btn4 {
+	background-position: -842px -15px;
+}
+
+#btn4 :hover {
+	background-position: -842px -94px;
+}
+
+#btn4.current {
+	background-position: -842px -171px;
+}
+
+#btn5 {
+	background-position: -572px -15px;
+}
+
+#btn5 :hover {
+	background-position: -572px -94px;
+}
+
+#btn5.current {
+	background-position: -572px -171px;
+}
+
+#menu li#btn6 {
+	background-position: -120px -15px;
+}
+
+#menu li#btn6 :hover {
+	background-position: -120px -94px;
+}
+
+#menu li#btn6.current {
+	background-position: -120px -171px;
+}
+
+/*教师页面切换选项卡的btn样式*/
+#btn_tea_jxpg {
+	background-position: -391px -15px;
+}
+
+#btn_tea_jxpg :hover {
+	background-position: -391px -94px;
+}
+
+#btn_tea_jxpg.current {
+	background-position: -391px -171px;
+}
+
+#btn_tea_ks {
+	background-position: -211px -15px;
+}
+
+#btn_tea_ks :hover {
+	background-position: -211px -94px;
+}
+
+#btn_tea_ks.current {
+	background-position: -211px -171px;
+}
+
+#btn_tea_xj {
+	background-position: -301px -15px;
+}
+
+#btn_tea_xj :hover {
+	background-position: -301px -94px;
+}
+
+#btn_tea_xj.current {
+	background-position: -301px -171px;
+}
+
+#btn_tea_rl {
+	background-position: -482px -15px;
+}
+
+#btn_tea_rl :hover {
+	background-position: -482px -94px;
+}
+
+#btn_tea_rl.current {
+	background-position: -482px -171px;
+}
+
+#left_bar {
+	width: 949px;
+	height: 100%;
+}
+
+#right_bar {
+	width: 218px;
+	height: 100%;
+	margin-left: 35px;
+}
+
+.float_left {
+	float: left;
+}
+
+#page_iframe,#bar_iframe {
+	width: 100%;
+	height: 100%;
+}
+
+#iframe0,#iframe1,#iframe2,#iframe3,#iframe4 {
+	border: 0px;
+}
+
+#login_info {
+	margin-top: 5px;
+	float: right;
+}
+
+#login_info img {
+	margin-bottom: 2px;
+}
+
+#login_info #nameLable {
+	cursor: pointer;
+}
+
+.clear {
+	clear: both;
+}
+
+/************************************************
+****************课程表页面样式*******************
+************************************************/
+.currentWeek {
+	background-color: #f3f3f3;
+}
+
+.timeLable {
+	color: #989898;
+}
+
+.courseTable {
+	clear: both;
+	width: 949px;
+	border-collapse: collapse;
+	background-color: #FFF;
+	text-align: center;
+	font-size: 13px;
+	font-family: "微软雅黑";
+}
+
+.courseTable thead td {
+	width: 47px;
+}
+
+.courseTable thead th {
+	width: 122px;
+	font-size: 16px;
+}
+
+.courseTable td { /*text-align:center;*/
+	
+}
+
+/**********CourseTableHead***********/
+#courseTableHead {
+	width: 949px;
+	height: 69px;
+	margin-left: 1px;
+}
+
+#courseTableHead div {
+	float: left;
+	height: 69px;
+	overflow: hidden;
+}
+
+#courseTableHead img {
+	margin-top: 14px;
+	cursor: pointer;
+}
+
+#thead_title { /*
+width: 100%; height: 100%; background: url(../images/big_calendar_head.png) no-repeat left top;
+ background-position:center;
+ _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="../images/big_calendar_head.png");
+ _background: none;
+ 
+ 
+ background:url(/uploadfile/200806/17/9E162710915.png) !important; 
+ background:none;
+ filterrogidXImageTransform.Microsoft.AlphaImageLoader(enabled="true", sizingMethod="image", src="/uploadfile/200806/17/9E162710915.png")
+*/
+	background-image: url(../images/big_calendar_head.png);
+	background-position: center;
+	width: 817px;
+}
+
+#thead_title span {
+	color: #FFF;
+	font-family: "微软雅黑";
+	font-size: 24px;
+	height: 50px;
+	display: block;
+	padding-top: 28px;
+}
+
+#nextSemester img {
+	margin-left: -1px;
+}
+
+#preSemester img {
+	
+}
+
+/************************************/
+#am_line td {
+	border-bottom: 1px solid #000;
+}
+
+#pm_line td {
+	border-bottom: 1px solid #000;
+}
+
+th {
+	border: 1px solid #ccc;
+	height: 27px;
+	font-size: 15px;
+}
+
+/*
+td{
+border:1px solid #ccc;
+}
+*/
+.courseTable td {
+	border: 1px solid #ccc;
+	height: 37px;
+}
+
+.tableFoot {
+	clear: both;
+	width: 949px;
+	height: 15px;
+}
+
+.panelHead {
+	width: 949px;
+	height: 15px;
+}
+
+.tableFoot .corner_left {
+	float: left;
+	width: 15px;
+	height: 15px;
+	background-image: url(../images/round_corner_left.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	font-size: 0px;
+}
+
+.tableFoot .corner_right {
+	float: left;
+	width: 16px;
+	height: 15px;
+	background-image: url(../images/round_corner_right.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.tableFoot .corner_center {
+	float: left;
+	width: 918px;
+	height: 15px;
+	background-color: #FFF;
+}
+
+.panelHead .corner_center {
+	width: 934px;
+}
+
+.panelHead .corner_right {
+	width: 15px;
+	height: 15px;
+	background-image: url(../images/round_corner_up_right.png);
+	/*-moz-transForm:scaleY(-1);
+    -webkit-transform:scaleY(-1);
+    -o-transform:scaleY(-1);
+    transform:scaleY(-1);
+    IE
+    filter:FlipV;*/
+}
+
+tr.alt td {
+	background: #eff2ff;
+}  /*这行将给所有的tr加上背景色*/
+tr.over td {
+	background: #fff1e8;
+}  /*这个将是鼠标高亮行的背景色*/
+td.over {
+	background: #fff1e8;
+}  /*这个将是鼠标高亮行的背景色*/ /************************************************
+****************小日历样式***********************
+************************************************/ /* the input field */
+.date {
+	border: 1px solid #ccc;
+	font-size: 18px;
+	padding: 4px;
+	text-align: center;
+	width: 194px;
+	/*
+    -moz-box-shadow:0 0 10px #eee inset;
+    -webkit-box-shadow:0 0 10px #eee inset;
+	*/
+}
+
+/* calendar root element */
+#calroot {
+	/* place on top of other elements. set a higher value if nessessary */
+	z-index: 10000;
+	position: static;
+	margin-top: -12px;
+	width: 218px;
+	font-size: 12px;
+	background-image: url(../images/small_calendar_foot.png);
+	background-position: bottom;
+	padding-bottom: 5px;
+	background-repeat: no-repeat;
+	-moz-box-shadow: 0 0 15px #666;
+	-webkit-box-shadow: 0 0 15px #666;
+}
+
+/* head. contains title, prev/next month controls and possible month/year selectors */
+#calhead {
+	height: 49px;
+	width: 218px;
+}
+
+#caltitle {
+	background-image: url(../images/boy_bg.png);
+	background-position: -518px -200px;
+	background-repeat: no-repeat;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+	float: left;
+	text-align: center;
+	width: 169px;
+	height: 49px;
+	line-height: 67px;
+	float: left;
+}
+
+#calprev {
+	display: block;
+	width: 25px;
+	height: 49px;
+	background: transparent url(../images/boy_bg.png);
+	background-position: -490px -200px;
+	float: left;
+	cursor: pointer;
+}
+
+#calnext {
+	display: block;
+	width: 24px;
+	height: 49px;
+	background: transparent url(../images/boy_bg.png);
+	background-position: -690px -200px;
+	float: left;
+	cursor: pointer;
+}
+
+#calprev.caldisabled,#calnext.caldisabled {
+	visibility: hidden;
+}
+
+/* year/month selector */
+#caltitle select {
+	font-size: 10px;
+}
+
+/* names of the days */
+#caldays {
+	height: 29px;
+	line-height: 29px;
+	border-bottom: 1px solid #f0efef;
+	background-color: #FFF;
+}
+
+#caldays span {
+	display: block;
+	float: left;
+	width: 30px;
+	text-align: center;
+}
+
+/* container for weeks */
+#calweeks {
+	background-color: #fff;
+}
+
+/* single week */
+.calweek {
+	clear: left;
+	height: 29px;
+}
+
+/* single day */
+.calweek a {
+	display: block;
+	float: left;
+	width: 30px;
+	height: 29px;
+	line-height: 29px;
+	text-decoration: none;
+	font-family: "Myriad Pro";
+	font-size: 13px;
+	margin-left: 1px;
+	text-align: center;
+	color: #666;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+/* different states */
+.calweek a:hover,.calfocus {
+	background-color: #foefef;
+}
+
+/* sunday */
+a.calsun {
+	color: red;
+}
+
+/* offmonth day */
+a.caloff {
+	color: #ccc;
+}
+
+a.caloff:hover {
+	background-color: rgb(245, 245, 250);
+}
+
+/* unselecteble day */
+a.caldisabled {
+	background-color: #efefef !important;
+	color: #ccc !important;
+	cursor: default;
+}
+
+/* current day */
+#calcurrent {
+	background-color: #c92f0b;
+	color: #fff;
+}
+
+/* today */
+#caltoday {
+	background-color: #fe0000;
+	color: #fff;
+}
+
+#selectedCourse {
+	width: 218px;
+}
+
+a.dayOfCurrentWeek {
+	background-color: #c92f0b;
+	color: #FFF;
+}
+
+/************************************************
+****************已选课程列表侧边栏样式*****************
+************************************************/
+#listHead {
+	height: 8px;
+	background-image: url(../images/small_calendar_foot.png);
+	background-repeat: no-repeat;
+	-moz-transForm: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	transform: scaleY(-1);
+	/*IE*/
+	filter: FlipV;
+}
+
+#listFoot {
+	height: 8px;
+	background-repeat: no-repeat;
+	background-image: url(../images/small_calendar_foot.png);
+}
+
+#listContent {
+	width: 217px;
+	padding: 33px 0;
+	background-color: #FFF;
+}
+
+#listContent ul {
+	list-style: none;
+}
+
+#listContent ul li {
+	margin: 4px 0;
+}
+
+#listTitle {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.col_course {
+	display: inline-block;
+	width: 120px;
+}
+
+.col_score {
+	display: inline-block;
+	width: 55px
+}
+
+#listContent .courseTable {
+	width: inherit;
+}
+
+/************************************************
+****************列表样式*****************
+************************************************/
+.listTable {
+	border: 0;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.listTable td {
+	padding: 2px 2px;
+	height: 25px;
+	font-size: 12px;
+	border: 1px solid #ccc;
+}
+
+.listTable th {
+	font-size: 12px;
+	background-color: #cdd8ea;
+}
+
+.btn {
+	background: url(../images/button_bg.png) no-repeat scroll transparent;
+	background-image: url(../images/button_bg.png);
+	width: 65px;
+	height: 25px;
+	padding: 0 10px;
+	border: 0;
+	cursor: pointer;
+}
+
+.searchBtb {
+	color: #FFF;
+	background-image: url(../images/btn_bg.png);
+	width: 63px;
+	height: 23px;
+	background-position: 0 -24px;
+	padding: 0 10px;
+	border: 0;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.course_shift {
+	background-repeat: no-repeat;
+	background-image: url(../images/course_shift.png);
+	width: 110px;
+	height: 23px;
+	background-position: -20 -100px;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.input {
+	height: 20px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.page_nav {
+	padding-top: 10px;
+}
+
+.total_count {
+	width: 100%;
+}
+
+#searchBox {
+	height: 35px;
+}
+
+.panelContent {
+	background-color: #FFF;
+}
+
+.close {
+	background: url("../img/dialog_close.png") no-repeat scroll 0 0
+		transparent;
+	position: absolute;
+	border: 1px solid #E0E0E0;
+	right: 5px;
+	top: 5px;
+	cursor: pointer;
+	height: 9px;
+	width: 9px;
+}
+
+.close:hover {
+	background-position: -22px 0;
+}
+
+.downList {
+	margin-top: 30px;
+}
+
+table.tsxkTable { /*width:916px;*/
+	width: 100%;
+	border: 0;
+	background-color: #fff;
+}
+
+/*******************************/
+选课页面
+  /******************************/ .xkFoot {
+	clear: both;
+	width: 916px;
+	height: 15px;
+}
+
+.xkFoot .corner_left {
+	float: left;
+	width: 15px;
+	height: 15px;
+	background-image: url(../images/round_corner_left.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	font-size: 0px;
+}
+
+.xkFoot .corner_right {
+	float: left;
+	width: 16px;
+	height: 15px;
+	background-image: url(../images/round_corner_right.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	font-size: 0px;
+}
+
+.xkFoot .corner_center {
+	float: left;
+	width: 885px;
+	height: 15px;
+	background-color: #FFF;
+	font-size: 0px;
+}
+
+.corner_right {
+	float: left;
+	width: 16px;
+	height: 15px;
+	background-image: url(../images/round_corner_right.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	font-size: 0px;
+}
+
+.corner_center {
+	float: left;
+	width: 900px;
+	height: 15px;
+	background-color: #FFF;
+	border: none;
+	font-size: 0px;
+}
+
+#iframe0,#iframe1,#iframe2,#iframe3,#iframe4 {
+	height: 590px;
+	/*width:949px;*/
+	width: 100%;
+	/*height: 100%;*/
+}
+
+td div.overflow {
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+}
+
+.tipInfo {
+	font-style: italic;
+	font-size: 10px;
+	margin-top: -10px;
+	padding: 0px 20px 3px 0px;
+	text-align: right;
+	color: #666666;
+}
+
+/*管理员界面按钮*/
+#menu2 li {
+	margin: 10px 10px;
+	background-repeat: no-repeat;
+	background-image: url(../images/menu_buttons_manager.png);
+	list-style: none;
+	float: left;
+	width: 77px;
+	height: 77px;
+	cursor: pointer;
+}
+
+/*参数设置*/
+#btn111 {
+	background-position: -26px -24px;
+}
+
+#btn111 :hover {
+	background-position: -26px -121px;
+}
+
+#btn111.current {
+	background-position: -26px -220px;
+}
+
+/*参数刷新*/
+#btn222 {
+	background-position: -136px -24px;
+}
+
+#btn222 :hover {
+	background-position: -136px -121px;
+}
+
+#btn222.current {
+	background-position: -136px -220px;
+}
+
+/*选课处理*/
+#btn333 {
+	background-position: -246px -24px;
+}
+
+#btn333 :hover {
+	background-position: -246px -121px;
+}
+
+#btn333.current {
+	background-position: -246px -220px;
+}
+
+/*结算处理*/
+#btn444 {
+	background-position: -356px -24px;
+}
+
+#btn444 :hover {
+	background-position: -356px -121px;
+}
+
+#btn444.current {
+	background-position: -356px -220px;
+}
+
+/*结账处理*/
+#btn555 {
+	background-position: -466px -24px;
+}
+
+#btn555 :hover {
+	background-position: -466px -121px;
+}
+
+#btn555.current {
+	background-position: -466px -220px;
+}
+
+.btn_admin {
+	background: url(../images/btn_admin.png) no-repeat scroll transparent;
+	background-image: url(../images/btn_admin.png);
+	width: 120px;
+	height: 25px;
+	padding: 0 10px;
+	border: 0;
+	cursor: pointer;
+}
+
+.long_btn {
+	background: url(../images/long_btn.png) no-repeat scroll transparent;
+	background-image: url(../images/long_btn.png);
+	background-position: -7px -29px;
+	width: 119px;
+	height: 23px;
+	padding: 0 10px;
+	border: 0;
+	cursor: pointer;
+}
+
+.long_btn1 {
+	background: url(../images/long_btn.png) no-repeat scroll transparent;
+	background-image: url(../images/long_btn.png);
+	background-position: -19px -4px;
+	width: 92px;
+	height: 23px;
+	padding: 0 10px;
+	border: 0;
+	cursor: pointer;
+}
+
+.long_btn2 {
+	background: url(../images/long_btn1.png) no-repeat scroll transparent;
+	background-image: url(../images/long_btn1.png);
+	background-position: -2px -53px;
+	width: 147px;
+	height: 23px;
+	padding: 0 10px;
+	border: 0;
+	cursor: pointer;
+}
+
+.listTable1 {
+	border: 0;
+	width: 1198px;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.listTable1 td {
+	padding: 2px 2px;
+	height: 25px;
+	font-size: 12px;
+	border: 1px solid #ccc;
+}
+
+.listTable1 th {
+	font-size: 12px;
+	background-color: #cdd8ea;
+}
+
+.a_btn {
+	background-image: url(../images/long_btn.png);
+	background-position: -19px -4px;
+	width: 92px;
+	height: 23px;
+	display: block;
+	line-height: 22px;
+	float: right;
+	cursor: pointer;
+	margin-right: 10px
+}
+
+.navegate {
+	padding: 0px 3px;
+}
