@@ -231,11 +231,27 @@ var main={
             });
         });
     },
-
     gpa:function(){
         if(location.href.indexOf('Svlt_QueryStuScore')==-1){
             return;
         }
+        var caa;
+        $('.listTable tr').each(function(i){
+            if(!i){
+                return;
+            }
+            var self=$(this),undefined;
+            //rs[i-1]={};
+            //for(k in dict){
+            //    rs[i-1][k]=main.string2Number($.trim(self.find('td').eq(hasCb?dict[k]:(dict[k]-1)).text()));
+            //}
+            if (self.find('td').eq(9).find('input').length == 0){
+	            var t_score = main.string2Number($.trim(self.find('td').eq(9).text()));
+	            self.find('td').eq(9).html("<input type='text' style='width:30px;'>");
+	            self.find('td').eq(9).find('input').val(t_score);
+	        }
+
+        });
 
         var ss=window.scores=main.getScores();
 
@@ -259,6 +275,9 @@ var main={
             var self=$(this),
                 undefined;
             if(e.target.className=='scoreItemCb'){
+            	self.find('.scoreItemCb').prop('checked',function(i,v){
+            	});
+            	main.calcGpa();
                 return;
             }
             self.find('.scoreItemCb').prop('checked',function(i,v){
@@ -314,7 +333,10 @@ var main={
             var self=$(this),undefined;
             rs[i-1]={};
             for(k in dict){
-                rs[i-1][k]=main.string2Number($.trim(self.find('td').eq(hasCb?dict[k]:(dict[k]-1)).text()));
+            	if (k == 'score')
+                	rs[i-1][k]=main.string2Number($.trim(self.find('td').eq(hasCb?dict[k]:(dict[k]-1)).find('input').val()));
+                else
+                	rs[i-1][k]=main.string2Number($.trim(self.find('td').eq(hasCb?dict[k]:(dict[k]-1)).text()));
             }
         });
         return rs;
@@ -341,7 +363,7 @@ var main={
             }
             return 0;
         },
-        ss=window.scores?window.scores.slice():main.getScores(),
+        ss=main.getScores(),
         gs={},gpa=0,totalCredits=0,avScore=0,totalScore=0,totalCreditGp=0,totalCreditScore=0,gp
         undefined;
         $('.scoreItemCb').each(function(i){
@@ -351,7 +373,6 @@ var main={
                 delete ss[i];
             }
         });
-
         for(var i in ss){
             totalCreditScore+=ss[i].score*ss[i].credit;
             gp=getGp(ss[i].score);
