@@ -38,7 +38,7 @@ class CaptchaNew(object):
         model.add(Activation('softmax'))
         sgd = SGD(l2=0.0, lr=0.05, decay=1e-6, momentum=0.9, nesterov=True)
         model.compile(loss='categorical_crossentropy', optimizer=sgd, class_mode="categorical")
-        model.load_weights("eduLogin/captcha/tmp/weights.11-0.05.h5")
+        model.load_weights("tmp/weights.11-0.05.h5")
         return model
 
     def get_res(self, img):
