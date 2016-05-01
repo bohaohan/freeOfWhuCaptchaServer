@@ -30,6 +30,3 @@ def login(request):
 		captcha = CaptchaNew()
 		result = captcha.predict(image)
 		return HttpResponse(json.dumps({'result': result}))
-	#return HttpResponse(json.dumps(img))
-		
-	
