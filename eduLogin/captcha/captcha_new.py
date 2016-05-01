@@ -9,9 +9,9 @@ class CaptchaNew(object):
        'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
        'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w',
        'x', 'y', 'z']
-    model = get_model()
+    model = None
     def __init__(self):
-        pass
+        self.model = self.get_model()
 
     def get_model(self):
         classes = 36
